@@ -22,7 +22,7 @@ Goal of Project: to create a script to monitor the traffic of a particular websi
 <p align="center">
 Create a shell script file in vs code with the name watchdog.sh: <br/>
 <p>
--enter the following command: ```sudo tcpdump -#XXtttt host skyroute66.com -c10<br/>```
+-enter the following command: <br/>```sudo tcpdump -#XXtttt host skyroute66.com -c10```<br/>
 -this command is used to capture 10 packets from skyroute66.com with readable date and time format arranged properly.<br/>
 -the shell script is not executable at first (evident in the screenshot below)<br/>
 -it is only after we change the modification with the command “chmod +x watchdog.sh”, it becomes executable afterwards (watchdog.sh turns green)<br/>
