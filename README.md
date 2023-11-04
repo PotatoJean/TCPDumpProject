@@ -35,18 +35,36 @@ Create a shell script file in vs code with the name watchdog.sh: <br/>
 <p align="center">
 Running the execution:  <br/>
 <p>To run the execution, we enter the command “./watchdog.sh”, and refresh the skyroute66.com to enable the traffic. We will get the sample output below.</p> </br>
+<p align="center">
 <img src="https://i.imgur.com/NrsKKvr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <p>Highlighted in (from left to right):</br>
+Pink- packet number</br>
+Yellow- readable date and time format</br>
+Blue- source IP address</br>
+Purple- destination IP address</br>
+Orange- packet content in hexadecimal format</br>
+Green- packet content in ASCII format</br></p>
+
 <br />
 <br />
+
+ <p align="center">
 Enter the number of passes: <br/>
+ <p align="center">
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+
+  <p align="center">
 Confirm your selection:  <br/>
+   <p align="center">
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+    
+    <p align="center">
 Wait for process to complete (may take some time):  <br/>
+     <p align="center">
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
