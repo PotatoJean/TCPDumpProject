@@ -27,6 +27,7 @@ Create a shell script file in vs code with the name watchdog.sh: <br/>
 -the shell script is not executable at first (evident in the screenshot below)<br/>
 -it is only after we change the modification with the command “chmod +x watchdog.sh”, it becomes executable afterwards (watchdog.sh turns green)<br/>
  </p> <br/>
+ <p align="center">
 <img src="https://i.imgur.com/7tw448f.png" height="80%" width="80%" alt="Change mod of shell script"/>
 <br />
 <br />
