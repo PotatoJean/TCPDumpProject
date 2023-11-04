@@ -83,13 +83,32 @@ Adding options(limits) for packet capture:  <br/>
 <br />
 <p>We can combine both options together as follows, “sudo tcpdump -#XXtttt host skyroute66.com -w capture.pcap -C 1  -G 600”. This will capture the packets for 10 minutes and put them into individual pcap files that is under a million bytes.</br></p>
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+<p align="center">
+What if you want more options?:  <br/>
+ <p>Moving on, if the options mentioned above do not satisfy your needs. TCPdump also comes with expressions, advanced version of options to extract information from a packet. Let’s create a new shell script named “advanced.sh” and insert the command below: br>
+sudo tcpdump -#XXtttt 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420' -w advanced.pcap</br>
+  -this command catches all the tcp traffic for a GET operation in stores them into advanced.pcap file
+</br></p>
+ <br />
+ <p align="center">
+<img src="https://i.imgur.com/XpYpHNX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>To simulate the tcp traffic with GET operation, we will submit the link below on recipepuppy.com.</br></p>
+<br />
+<p align="center">
+<img src="https://i.imgur.com/47gSeqp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>If we open the advanced.pcap file in Wireshark, we can see that only one packet is captured and it is a GET operation.</br></p>
+<br />
+<p align="center">
+<img src="https://i.imgur.com/5Vq5Fxo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<br />
+
+<p>That's all for this project, thanks for reading this far. If you wish to read a more detailed explaination regarding this project, check out the documentation below:</br></p>
+ [Documentation in Google Docs](https://docs.google.com/document/d/1GVlrx7c03vUXn6UAFxx7FCCVUQibGFbpjqL4QeZ32tM/edit?usp=sharing)
 
 <!--
  ```diff
