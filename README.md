@@ -22,7 +22,7 @@ Goal of Project: to create a script to monitor the traffic of a particular websi
 <p align="center">
 Create a shell script file in vs code with the name watchdog.sh: <br/>
 <p>
--enter the following command: <br/>```sudo tcpdump -#XXtttt host skyroute66.com -c10```<br/>
+-enter the following command: sudo tcpdump -#XXtttt host skyroute66.com -c10<br/>
 -this command is used to capture 10 packets from skyroute66.com with readable date and time format arranged properly.<br/>
 -the shell script is not executable at first (evident in the screenshot below)<br/>
 -it is only after we change the modification with the command “chmod +x watchdog.sh”, it becomes executable afterwards (watchdog.sh turns green)<br/>
@@ -70,10 +70,18 @@ Open the file in Wireshark:  <br/>
 <br />
     
    <p align="center"> 
-Wait for process to complete (may take some time):  <br/>
+Adding options(limits) for packet capture:  <br/>
+     <p>To limit the seconds of packet capture, we can use the command “sudo tcpdump -#XXtttt host skyroute66.com -c 10 -w capture.pcap -G 15”. The number after -G is in the format of seconds, so -G 15 means the script will capture the packets for 15 seconds, after that the packets captured will be wiped out until new traffic is presented again.</br></p>
      <p align="center">
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VXnVFnD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+        <p>The other option is -C, which limits the byte size of the dump file. Let’s say we do -C 1, what we are trying to do is limiting the dump file to be under 1 million byte (close to a megabyte). Now, we will try the script with the following command: “sudo tcpdump -#XXtttt -w capture.pcap -C 1” (host and number of packet are removed to generate more traffic).</br></p>
+     <p align="center">
+<img src="https://i.imgur.com/1rhNJ72.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+       <p>On the left, new pcap files are created after we execute the script. As highlighted in yellow, we can see that each pcap file is approximately a million byte each. Once the size is surpassed, a new pcap file will be created.</br></p>
+<br />
+<p>We can combine both options together as follows, “sudo tcpdump -#XXtttt host skyroute66.com -w capture.pcap -C 1  -G 600”. This will capture the packets for 10 minutes and put them into individual pcap files that is under a million bytes.</br></p>
 <br />
 Sanitization complete:  <br/>
 <img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
