@@ -49,9 +49,10 @@ Green- packet content in ASCII format</br></p>
 <br />
 
  <p align="center">
-Enter the number of passes: <br/>
+Save the file for later: <br/>
+   <p>To save the script for later use, we need to dump the captured packets into a dump file. To do that, we have to change the command inside the script by adding -w capture.pcap. Run it in the terminal using “./watchdog.sh” again, a capture.pcap file will be created.</br></p>
  <p align="center">
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4pQHfSK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
