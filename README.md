@@ -30,6 +30,8 @@ Create a shell script file in vs code with the name watchdog.sh: <br/>
 <img src="https://i.imgur.com/7tw448f.png" height="80%" width="80%" alt="Change mod of shell script"/>
 <br />
 <br />
+
+<p align="center">
 Running the execution:  <br/>
 <p>To run the execution, we enter the command “./watchdog.sh”, and refresh the skyroute66.com to enable the traffic. We will get the sample output below.</p> </br>
 <img src="https://i.imgur.com/NrsKKvr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
