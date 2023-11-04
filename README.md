@@ -22,15 +22,16 @@ Goal of Project: to create a script to monitor the traffic of a particular websi
 <p align="center">
 Create a shell script file in vs code with the name watchdog.sh: <br/>
 <p>
--enter the following command: sudo tcpdump -#XXtttt host skyroute66.com -c10
--this command is used to capture 10 packets from skyroute66.com with readable date and time format arranged properly.
--the shell script is not executable at first (evident in the screenshot below)
--it is only after we change the modification with the command “chmod +x watchdog.sh”, it becomes executable afterwards (watchdog.sh turns green)
+-enter the following command: sudo tcpdump -#XXtttt host skyroute66.com -c10<br/>
+-this command is used to capture 10 packets from skyroute66.com with readable date and time format arranged properly.<br/>
+-the shell script is not executable at first (evident in the screenshot below)<br/>
+-it is only after we change the modification with the command “chmod +x watchdog.sh”, it becomes executable afterwards (watchdog.sh turns green)<br/>
  </p> <br/>
 <img src="https://i.imgur.com/7tw448f.png" height="80%" width="80%" alt="Change mod of shell script"/>
 <br />
 <br />
 Running the execution:  <br/>
+<p>To run the execution, we enter the command “./watchdog.sh”, and refresh the skyroute66.com to enable the traffic. We will get the sample output below.</p> </br>
 <img src="https://i.imgur.com/NrsKKvr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
