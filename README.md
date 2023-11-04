@@ -57,9 +57,15 @@ Save the file for later: <br/>
 <br />
 
   <p align="center">
-Confirm your selection:  <br/>
+Open the file in Wireshark:  <br/>
+  
+   <p> Wireshark is basically tcpdump with a user interface, it displays the packets captured in a more appealing way for the ease of users.</br></p>
    <p align="center">
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wvXs5LB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+     <p>Wireshark also display the hexadecimal and ASCII format packet content in a human readable format. We can click on each piece of to display the information behind it.</br></p>
+   <p align="center">
+<img src="https://i.imgur.com/MI2aAMT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
     
