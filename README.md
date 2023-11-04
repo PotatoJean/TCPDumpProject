@@ -1,7 +1,7 @@
 <h1>Analyze Network Traffic with TCPDump</h1>
 
 <h2>Description</h2>
-TCP dump is a popular networking utility used by IT and networking professionals worldwide to capture and analyze TCP traffic within a network.
+TCP dump is a popular networking utility used by IT and networking professionals worldwide to capture and analyze TCP traffic within a network.</br>
 
 Goal of Project: to create a script to monitor the traffic of a particular website, analyze the traffic coming in and out between that particular website and your workstation.
 <br />
@@ -63,7 +63,7 @@ Open the file in Wireshark:  <br/>
    <p align="center">
 <img src="https://i.imgur.com/wvXs5LB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-     <p>Wireshark also display the hexadecimal and ASCII format packet content in a human readable format. We can click on each piece of to display the information behind it.</br></p>
+     <p>Wireshark can also displays the hexadecimal and ASCII format packet content in a human readable format. We can click on each piece of to display the information behind it.</br></p>
    <p align="center">
 <img src="https://i.imgur.com/MI2aAMT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
@@ -108,7 +108,7 @@ sudo tcpdump -#XXtttt 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420' -w advance
 <br />
 
 <p>That's all for this project, thanks for reading this far. If you wish to read a more detailed explaination regarding this project, check out the documentation below:</br></p>
- [Documentation in Google Docs](https://docs.google.com/document/d/1GVlrx7c03vUXn6UAFxx7FCCVUQibGFbpjqL4QeZ32tM/edit?usp=sharing)
+  ### [Documentation in Google Docs](https://docs.google.com/document/d/1GVlrx7c03vUXn6UAFxx7FCCVUQibGFbpjqL4QeZ32tM/edit?usp=sharing)
 
 <!--
  ```diff
